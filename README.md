@@ -29,3 +29,12 @@ Usuario → Frontend Next.js → FastAPI → Supabase
 - Control de empleados
 - Machine Learning
 - Automatización n8n
+
+## Instalación
+
+### Backend
+pip install -r requirements.txt
+
+### Frontend
+npm install
+npm run dev
