@@ -34,8 +34,8 @@ export default function QRDisplay() {
       <div style={styles.qrContainer}>
         <img src={qrCode} alt="QR de asistencia" style={styles.qrImage} />
       </div>
-      <p style={styles.expiryText}>⏱️ Este QR expira en: <strong>{expiresIn} segundos</strong></p>
-      <p style={styles.infoText}>✅ Abre la cámara de tu celular y escanea el código</p>
+      <p style={styles.expiryText}>Este QR expira en: <strong>{expiresIn} segundos</strong></p>
+      <p style={styles.infoText}>Abre la cámara de tu celular y escanea el código</p>
     </div>
   )
 }
