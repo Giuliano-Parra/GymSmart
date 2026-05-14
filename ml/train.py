@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import os
 
-print("🤖 Entrenando modelo Random Forest...")
+print("Entrenando modelo Random Forest...")
 
 # Datos sintéticos
 data = pd.DataFrame({
@@ -23,5 +23,5 @@ model.fit(X, y)
 os.makedirs('models', exist_ok=True)
 joblib.dump(model, 'models/churn_model.pkl')
 
-print(f"✅ Modelo guardado en models/churn_model.pkl")
-print(f"📊 Precisión en entrenamiento: {model.score(X, y) * 100:.2f}%")
+print(f"Modelo guardado en models/churn_model.pkl")
+print(f"Precisión en entrenamiento: {model.score(X, y) * 100:.2f}%")
