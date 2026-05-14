@@ -55,7 +55,7 @@ export default function ScanQR() {
         setCameraActive(true)
       } catch (err2) {
         console.error("Error con cámara frontal:", err2)
-        setScanResult({ success: false, message: "❌ No se pudo acceder a la cámara" })
+        setScanResult({ success: false, message: "No se pudo acceder a la cámara" })
       }
     }
   }
@@ -86,13 +86,13 @@ export default function ScanQR() {
       })
       
       if (response.data.valid) {
-        setScanResult({ success: true, message: "✅ " + response.data.message })
+        setScanResult({ success: true, message: "" + response.data.message })
       } else {
-        setScanResult({ success: false, message: "❌ " + response.data.message })
+        setScanResult({ success: false, message: "" + response.data.message })
       }
     } catch (error) {
       const msg = error.response?.data?.detail || error.message || "Error al verificar QR"
-      setScanResult({ success: false, message: "❌ " + msg })
+      setScanResult({ success: false, message: "" + msg })
     }
     
     setVerifying(false)
@@ -120,7 +120,7 @@ export default function ScanQR() {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1>📷 Escanear QR</h1>
+        <h1>Escanear QR</h1>
         <button onClick={() => window.location.href = "/dashboard/user"} style={styles.backButton}>
           ← Volver
         </button>
@@ -130,7 +130,7 @@ export default function ScanQR() {
         <div id={containerId} style={styles.scanner}></div>
         {!cameraActive && !scanResult && (
           <div style={styles.cameraOff}>
-            <p>📷 Cámara apagada</p>
+            <p>Cámara apagada</p>
             <button onClick={reiniciarEscanner} style={styles.retryButton}>Activar cámara</button>
           </div>
         )}
@@ -138,7 +138,7 @@ export default function ScanQR() {
       
       {verifying && (
         <div style={styles.loading}>
-          <p>🔍 Verificando código...</p>
+          <p>Verificando código...</p>
         </div>
       )}
       
@@ -150,13 +150,13 @@ export default function ScanQR() {
         }}>
           <p>{scanResult.message}</p>
           <button onClick={reiniciarEscanner} style={styles.retryButton}>
-            📷 Escanear otro QR
+            Escanear otro QR
           </button>
         </div>
       )}
       
       <div style={styles.instructions}>
-        <h3>📌 Instrucciones:</h3>
+        <h3>Instrucciones:</h3>
         <p>1. Apunta tu cámara al código QR en la pantalla de recepción</p>
         <p>2. Asegúrate de tener buena iluminación</p>
         <p>3. El QR se actualiza cada 60 segundos</p>
