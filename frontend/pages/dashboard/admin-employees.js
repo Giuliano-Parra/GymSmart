@@ -120,10 +120,10 @@ export default function AdminEmployees() {
 
   const getRoleName = (role) => {
     const roles = {
-      'admin': '👑 Administrador',
-      'employee': '👔 Empleado',
-      'instructor': '🏋️ Instructor',
-      'admin_staff': '📋 Personal Admin'
+      'admin': 'Administrador',
+      'employee': 'Empleado',
+      'instructor': 'Instructor',
+      'admin_staff': 'Personal Admin'
     }
     return roles[role] || role
   }
@@ -183,9 +183,9 @@ export default function AdminEmployees() {
                 required 
                 style={styles.input}
               >
-                <option value="employee">👔 Empleado</option>
-                <option value="instructor">🏋️ Instructor</option>
-                <option value="admin_staff">📋 Personal Administrativo</option>
+                <option value="employee">Empleado</option>
+                <option value="instructor">Instructor</option>
+                <option value="admin_staff">Personal Administrativo</option>
               </select>
               
               {!editingEmployee && (
@@ -202,7 +202,7 @@ export default function AdminEmployees() {
       )}
 
       <div style={styles.summaryCard}>
-        <h3>📊 Resumen</h3>
+        <h3>Resumen</h3>
         <div style={styles.summaryRow}>
           <span>Total de empleados:</span>
           <strong>{employees.length}</strong>
