@@ -63,6 +63,6 @@ Usuario → Frontend Next.js → FastAPI → Supabase
 ---
 
 ## Registro de usuarios
-![Registro](docs/screenshots/user_register.png)
+![Registro](docs/screenshots/user%20register.png)
 
 ---
