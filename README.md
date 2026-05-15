@@ -29,3 +29,40 @@ Usuario → Frontend Next.js → FastAPI → Supabase
 - Control de empleados
 - Machine Learning
 - Automatización n8n
+
+# Capturas del sistema
+
+## Login
+![Login](docs/screenshots/login.png)
+
+---
+
+## Dashboard administrativo
+![Dashboard](docs/screenshots/dashboard.png)
+
+---
+
+## Gestión de planes
+![Planes](docs/screenshots/gestion%20de%20planes.png)
+
+---
+
+## Registro de nuevo plan
+![Nuevo Plan](docs/screenshots/new%20plan.png)
+
+---
+
+## Generación de QR
+![QR](docs/screenshots/qr.png)
+
+---
+
+## Escaneo QR
+![Scan](docs/screenshots/scan.png)
+
+---
+
+## Registro de usuarios
+![Registro](docs/screenshots/user_register.png)
+
+---
