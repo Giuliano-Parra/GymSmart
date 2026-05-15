@@ -37,7 +37,7 @@ Usuario → Frontend Next.js → FastAPI → Supabase
 
 ---
 
-## Dashboard administrativo
+## Dashboard usuario
 ![Dashboard](docs/screenshots/dashboard.png)
 
 ---
